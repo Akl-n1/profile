@@ -190,6 +190,9 @@
 .mb-40 {
   margin-bottom: 40px;
 }
+.mb-60 {
+  margin-bottom: 60px;
+}
 /* Start Color */
 .c-black {
   color: black;
@@ -268,6 +271,12 @@
 .fs-30 {
   font-size: 30px;
 }
+.fs-35 {
+  font-size: 35px;
+}
+.fs-40 {
+  font-size: 40px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -345,4 +354,7 @@
 }
 .l-height {
   line-height: 1.8;
+}
+.font-family {
+  font-family: var(--font-family);
 }
