@@ -16,6 +16,10 @@ ul {
 *:focus {
   outline: none;
 }
+::selection {
+  background-color: var(--color-hover);
+  color: white;
+}
 /* Variables */
 :root {
   --background-color: #212a31;
