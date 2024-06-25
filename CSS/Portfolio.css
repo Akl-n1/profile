@@ -229,6 +229,7 @@ section {
   }
   .main .boxs .social i {
     justify-content: center;
+    margin-bottom: 10px;
   }
   .main .boxs {
     bottom: -160px;
