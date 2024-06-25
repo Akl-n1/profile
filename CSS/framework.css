@@ -118,6 +118,9 @@
 .pl-15 {
   padding-left: 15px;
 }
+.pb-20 {
+  padding-bottom: 20px;
+}
 .pb-60 {
   padding-bottom: 60px;
 }
@@ -209,7 +212,7 @@
 .color5 {
   color: var(--color5);
 }
-.color-hover{
+.color-hover {
   color: var(--color-hover);
 }
 .bg-color {
@@ -265,20 +268,23 @@
 .fs-30 {
   font-size: 30px;
 }
-.fw-bold {
-  font-weight: bold;
-}
-.fw {
-  font-weight: 900;
-}
 .fs-20 {
   font-size: 20px;
+}
+.fs-48 {
+  font-size: 48px;
 }
 .fs-50 {
   font-size: 50px;
 }
 .fs-60 {
   font-size: 60px;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw {
+  font-weight: 900;
 }
 @media (max-width: 767px) {
   .txt-c-mobile {
@@ -338,5 +344,5 @@
   opacity: 0.2;
 }
 .l-height {
-  line-height: 1.7;
+  line-height: 1.8;
 }
