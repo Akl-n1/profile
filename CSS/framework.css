@@ -1,11 +1,12 @@
 :root {
   --background-color: #212a31;
   --background-color2: #0d1118;
-  --background-color3: #083144;
+  --background-color3: #131821;
   --color: #e5e7eb;
   --color-border: #9d3c0b;
-  --color2: #2e3944;
   --color-hover: #d8510e;
+  --gray: rgb(53, 54, 56);
+  --color2: #2e3944;
   --color3: #ffa200;
   --font-family: "Playwrite NZ", sans-serif;
   --color4: rgb(255 162 0 / 50%);
@@ -23,6 +24,9 @@
 }
 .flex-column {
   flex-direction: column;
+}
+.flex-column-r {
+  flex-direction: column-reverse;
 }
 .space-between {
   justify-content: space-between;
@@ -55,6 +59,9 @@
 .gap-30 {
   gap: 30px;
 }
+.gap-40 {
+  gap: 40px;
+}
 .d-block {
   display: block;
 }
@@ -78,6 +85,12 @@
 }
 .p-20 {
   padding: 20px;
+}
+.p-30 {
+  padding: 30px;
+}
+.p-35 {
+  padding: 35px;
 }
 .pt-5 {
   padding-top: 5px;
@@ -109,6 +122,9 @@
 .pr-10 {
   padding-right: 10px;
 }
+.pr-30 {
+  padding-right: 30px;
+}
 .pl-5 {
   padding-left: 5px;
 }
@@ -117,6 +133,9 @@
 }
 .pl-15 {
   padding-left: 15px;
+}
+.pl-30 {
+  padding-left: 30px;
 }
 .pb-20 {
   padding-bottom: 20px;
@@ -262,6 +281,9 @@
 .fs-20 {
   font-size: 20px;
 }
+.fs-22 {
+  font-size: 22px;
+}
 .fs-23 {
   font-size: 23px;
 }
@@ -271,8 +293,8 @@
 .fs-30 {
   font-size: 30px;
 }
-.fs-35 {
-  font-size: 35px;
+.fs-36 {
+  font-size: 36px;
 }
 .fs-40 {
   font-size: 40px;
@@ -329,6 +351,9 @@
 .w-full {
   width: 100%;
 }
+.half-w {
+  width: 50%;
+}
 .w-100 {
   width: 100px;
 }
@@ -349,11 +374,21 @@
 .resize {
   resize: none;
 }
-.opacity {
+.opacity2 {
   opacity: 0.2;
 }
+.opacity5 {
+  opacity: 0.05;
+}
+.object-fit {
+  object-fit: cover;
+}
+
 .l-height {
-  line-height: 1.8;
+  line-height: 2;
+}
+.l-height18 {
+  line-height: 1.5;
 }
 .font-family {
   font-family: var(--font-family);

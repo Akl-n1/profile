@@ -28,6 +28,7 @@ ul {
   --color: #e5e7eb;
   --color-border: #9d3c0b;
   --color-hover: #d8510e;
+  --gray: rgb(53, 54, 56);
   --color2: #2e3944;
   --color3: #ffa200;
   --font-family: "Playwrite NZ", sans-serif;
@@ -244,20 +245,27 @@ section {
 }
 
 .Services .box {
+  height: 100%;
   padding: 20px 25px;
+  border: 2px solid #767676;
   box-shadow: 0px 0px 5px #767676, 0px 0px 5px #767676;
   transform: translateY(0);
   position: relative;
 }
 .Services .box:hover {
   transition: var(--transition);
-  transform: translateY(-10px);
+  border: 2px solid var(--color3);
+  box-shadow: 0px 0px 5px var(--color3), 0px 0px 5px var(--color3);
+}
+.Services .box:hover h1,
+.Services .box:hover i {
+  color: var(--color3);
 }
 .Services .box p {
   color: var(--color);
   line-height: 2;
 }
-.Services .box a {
+.Services .box .button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -287,14 +295,23 @@ section {
 }
 .projects .container .boxs .box {
   position: relative;
+  border: 2px solid var(--color-border);
+  box-shadow: 0px 0px 5px #767676, 0px 0px 5px #767676;
   background-color: rgb(46 57 68 / 20%);
   border-radius: 20px;
-  border: 1px solid var(--color4);
+}
+.projects .container .boxs .box:hover {
+  border: 2px solid var(--color3);
+  box-shadow: 0px 0px 5px var(--color3), 0px 0px 5px var(--color3);
 }
 .projects .container .boxs .box:hover .foot i {
   animation: right 1s linear infinite;
   -webkit-animation: right 0.5s linear infinite;
   transition: var(--transition);
+}
+.projects .container .boxs .box:hover .foot i,
+.projects .container .boxs .box:hover .foot p {
+  color: var(--color-hover);
 }
 @keyframes right {
   from {
@@ -349,50 +366,81 @@ section {
 .contact-us {
   background-color: var(--background-color3);
 }
-.contact-us .container .boxs .box {
-  padding: 20px 50px;
-  box-shadow: 0px 0px 5px #767676, 0px 0px 5px #767676;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transform: translateY(0);
-  width: 175px;
+.contact-us .container .boxs {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.contact-us .container .boxs .box:hover {
-  transform: translateY(-10px);
+.contact-us .container .boxs .box ul {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.contact-us .container .social {
-  width: fit-content;
-  margin: 20px auto;
+.contact-us .container .boxs .box ul a {
+  color: var(--color);
+  font-family: var(--font-family);
+  padding: 10px;
+}
+.contact-us .container .boxs .box ul a {
+  padding: 5px 5px 5px 0;
+  border-bottom: 2px solid transparent;
+}
+.contact-us .container .boxs .box ul a:hover {
+  padding: 5px 5px 5px 0;
+  color: var(--color-hover);
+  border-bottom: 2px solid var(--color-hover);
 }
 .contact-us .container .social i {
   width: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 30px;
   color: var(--color);
 }
 .contact-us .container .social i:hover {
   color: var(--color3);
 }
+.contact-us .container .boxs .box .buyCoffee img {
+  width: 217px !important;
+  height: 60px !important;
+}
+.contact-us .container .boxs .box-ref {
+  width: 300px;
+}
+.contact-us .container .boxs .box .links-ref a {
+  border-radius: 16px;
+  background-color: var(--gray);
+  color: var(--color);
+  font-size: 1rem;
+  align-items: center;
+  display: inline-flex;
+}
+.contact-us .container .boxs .box .links-ref a:hover {
+  color: var(--color-hover);
+}
 .contact-us p {
   padding-top: 20px;
   border-top: 1px solid #313131;
   margin-bottom: -49px;
 }
-@media (max-width: 450px) {
-  .contact-us .container .boxs .box {
-    padding: 24px 5px;
+@media (max-width: 992px) {
+  .contact-us .container .boxs {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    padding: 30px;
   }
-  .contact-us .container .social i {
-    margin-bottom: 10px;
+  .contact-us .container .boxs .box-ref {
+    display: none;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   .contact-us .container .boxs {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  .contact-us .container .boxs .box .social {
+    margin: 0;
+  }
+  .contact-us .container .boxs .middel h4 {
+    margin-top: 20px;
+  }
+  .contact-us .container .boxs .box .buyCoffee {
+    margin-top: 30px;
   }
 }
