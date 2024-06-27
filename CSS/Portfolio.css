@@ -45,6 +45,9 @@ ul {
   background-color: var(--color3);
 }
 /* Start button */
+img {
+  max-width: 100%;
+}
 .button-work {
   border: 2px solid var(--background-color2);
 }
@@ -54,9 +57,6 @@ ul {
   border: 2px solid var(--color3);
 }
 /* End button */
-img {
-  width: 100%;
-}
 a {
   display: inline-block;
 }
