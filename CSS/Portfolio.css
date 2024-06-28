@@ -182,7 +182,6 @@ section {
   color: var(--color3);
 }
 .main .boxs img {
-  width: 400px;
   position: relative;
   bottom: -56px;
 }
