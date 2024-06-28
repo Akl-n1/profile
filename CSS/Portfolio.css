@@ -5,10 +5,12 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
-  scroll-padding-top: 55px;
   text-decoration: none;
   transition: 0.3s;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color3);
 }
 ul {
   list-style: none;
@@ -28,11 +30,11 @@ ul {
   --color: #e5e7eb;
   --color-border: #9d3c0b;
   --color-hover: #d8510e;
-  --gray: rgb(53, 54, 56);
   --color2: #2e3944;
   --color3: #ffa200;
-  --font-family: "Playwrite NZ", sans-serif;
   --color4: rgb(255 162 0 / 50%);
+  --gray: rgb(53, 54, 56);
+  --font-family: "Playwrite NZ", sans-serif;
   --transition: 0.3s;
 }
 ::-webkit-scrollbar {
@@ -154,11 +156,10 @@ header nav .links .form {
 }
 /* Start Home */
 section {
-  padding: 70px 0;
-  border-bottom: 3px solid var(--color-border);
+  padding: 80px 0;
+  border-bottom: 2px solid var(--color-border);
 }
 .main {
-  min-height: 100vh;
   position: relative;
   background-color: #131821;
   overflow: hidden;
@@ -196,13 +197,9 @@ section {
     justify-content: center;
     margin-bottom: 10px;
   }
-  .main .boxs {
-    bottom: -160px;
-  }
 }
 /* Start About */
 .About {
-  min-height: 100vh;
   background-color: var(--background-color2);
 }
 .About .content .image img {
@@ -237,7 +234,6 @@ section {
 }
 /* Start Services */
 .Services {
-  min-height: 100vh;
   background-color: var(--background-color3);
 }
 .Services .boxs {
@@ -287,7 +283,6 @@ section {
 }
 /* Start */
 .projects {
-  min-height: 100vh;
   background-color: var(--background-color2);
 }
 .projects .container .boxs {

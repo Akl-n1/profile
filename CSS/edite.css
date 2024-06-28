@@ -76,6 +76,7 @@
 }
 .main-about {
   padding: 55px 0;
+  border-bottom: 2px solid var(--color-hover);
   width: 100%;
   margin: auto;
 }
@@ -157,7 +158,9 @@ p a:hover {
 }
 /* Start Contact-us*/
 .contact-us {
+  /* border-top: 3px solid var(--color-hover); */
   background-color: var(--background-color3);
+  border-bottom: none;
 }
 .contact-us .container .boxs {
   grid-template-columns: repeat(3, minmax(0, 1fr));
